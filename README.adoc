@@ -1,3 +1,9 @@
+= Prerequisites
+
+For this applicaiton to work a Redis server must be running on localhost:6379
+
+= Exploring the Application
+
 This is a sample application that demonstrates how to allow having a unique session id based on a tenant id.
 For example, a URL like this:
 

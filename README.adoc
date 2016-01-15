@@ -1,0 +1,34 @@
+This is a sample application that demonstrates how to allow having a unique session id based on a tenant id.
+For example, a URL like this:
+
+http://localhost:8080/example.com/
+
+will have a different session id than a URL like this:
+
+http://localhost:8080/example.org/
+
+To observe this behavior visit:
+
+http://localhost:8080/example.com/
+
+Enter the following credentials:
+
+* Username - rob
+* Password - password
+
+Observe the user name that is displayed as rob.
+
+Now visit:
+
+http://localhost:8080/example.org/
+
+Enter the following credentials:
+
+* Username - luke
+* Password - password
+
+Observe the user name that is displayed as luke.
+
+Switch back to http://localhost:8080/example.com/ and observe that the user name is still displayed as rob.
+
+Visit http://localhost:8080/spring.io/ and observe that authentication is still required.

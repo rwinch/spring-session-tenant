@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Home</title>
+</head>
+<body>
+	<h1>Welcome</h1>
+	<p>
+		Welcome <span th:text="${#httpServletRequest.remoteUser}">Fake user name</span>!
+	</p>
+	<form th:action="@{/logout}" method="post">
+		<button type="submit">Log Out</button>
+	</form>
+</body>
+</html>
